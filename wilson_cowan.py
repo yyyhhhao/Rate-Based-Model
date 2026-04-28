@@ -523,8 +523,6 @@ def main() -> None:
     if "motor" in requested:
         plot_motor_control(output_dir, dpi=args.dpi, dt_ms=args.dt_ms)
 
-    write_ppt_notes(output_dir)
-
     print("Generated outputs:")
     for path in sorted(output_dir.iterdir()):
         print(f" - {path}")
